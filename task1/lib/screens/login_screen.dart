@@ -40,7 +40,7 @@ class _LoginScreenState extends State<LoginScreen> {
             controller: _nameController,
             decoration: const InputDecoration(
               border: OutlineInputBorder(),
-              labelText: "Прізвище",
+              labelText: 'Прізвище',
             ),
           ),
         ),
@@ -50,7 +50,7 @@ class _LoginScreenState extends State<LoginScreen> {
             controller: _surnameController,
             decoration: const InputDecoration(
               border: OutlineInputBorder(),
-              labelText: "Імя",
+              labelText: "Ім'я",
             ),
           ),
         ),
@@ -64,12 +64,12 @@ class _LoginScreenState extends State<LoginScreen> {
             } else {
               ScaffoldMessenger.of(context).showSnackBar(
                 const SnackBar(
-                  content: Text('Please fill in all fields'),
+                  content: Text('Будь ласка заповніть усі поля'),
                 ),
               );
             }
           },
-          child: const Text('LOGIN'),
+          child: const Text('Логін'),
         ),
       ]),
     )));
