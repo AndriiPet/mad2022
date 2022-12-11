@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:task1/data/app_routes.dart';
-import 'package:task1/screens/home_screen.dart';
-import 'package:task1/screens/login_screen.dart';
+
+import 'screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,13 +13,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.lightBlue,
+        primarySwatch: Colors.blue,
       ),
-      initialRoute: AppRoutes.login,
-      routes: {
-        AppRoutes.login: (context) => const LoginScreen(),
-        AppRoutes.home: (context) => const HomeScreen(),
-      },
+      home: const HomeScreen(),
     );
   }
 }
